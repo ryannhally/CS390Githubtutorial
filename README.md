@@ -17,7 +17,7 @@ In this tutorial will cover the basics of using Git from the command line. You w
   
 2. Install Git <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can check to see if Git is already installed by running
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You can check to see if Git is already installed by running
    ```
    git --version
    ```
@@ -26,24 +26,27 @@ In this tutorial will cover the basics of using Git from the command line. You w
 3. Authenticate with Github CLI
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To easily manage your credentials, download Github CLI [here](https://github.com/cli/cli#installation). Next, run
-
 ```
 gh auth login
 ```
-Follow the 
+Follow the prompts.
 
 ## Create a repostiory
-First, we will create a repository on the command line. Of course, this is not the only way to start working with Git ....
+First, we will create a local repository on the command line. 
+
+There are both **local** and **remote** repositories. **Local** repositories live on your computer while **remote** repositories are kept on a server. If you'd like to collaborate with others on your code, or just want to be able to access your code if, for example, your computer breaks, it's important to be able to use remote repositories. In this tutorial, we will start by creating a local repository and then **pushing** (more on what that is later) onto Github, so it is stored in a remote repository. 
 
 ### Create a local repository
 Move into whereever you'd like your project to be stored and run
 ```
 git innit
 ```
+You've now created a local respository!
 
-### Create a remote repository
+### Push your repository onto Github
+Run
 ```
-git remote add origin https://github.com/your github username /your github repo name.git
+git remote add origin https://github.com/USERNAME/PROJECTNAME.git
 ```
 
 ## A
