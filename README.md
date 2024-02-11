@@ -15,17 +15,22 @@ In this tutorial will cover the basics of using Git from the command line. You w
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To work with Git from the command line, you will first need to open up your terminal of choice.
   
-2. Install Git
-  You can check to see if Git is already installed by running
+2. Install Git <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can check to see if Git is already installed by running
    ```
    git --version
    ```
-If you don't already have Git installed, click [here](https://docs.gitlab.com/ee/topics/git/how_to_install_git/index.html) for a tutorial on how to install.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If you don't already have Git installed, click [here](https://docs.gitlab.com/ee/topics/git/how_to_install_git/index.html) for a tutorial on how to install.
  
-3. Authenticate
+3. Authenticate with Github CLI
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To easily manage your credentials, download Github CLI [here](https://github.com/cli/cli#installation). Next, run
+
 ```
 gh auth login
 ```
+Follow the 
 
 ## Create a repostiory
 First, we will create a repository on the command line. Of course, this is not the only way to start working with Git ....
