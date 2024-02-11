@@ -34,6 +34,8 @@ Follow the prompts.
 ## Create a repostiory
 First, we will create a local repository on the command line. 
 
+### Some background...
+
 There are both **local** and **remote** repositories. **Local** repositories live on your computer while **remote** repositories are kept on a server. If you'd like to collaborate with others on your code, or just want to be able to access your code if, for example, your computer breaks, it's important to be able to use remote repositories. In this tutorial, we will start by creating a local repository and then **pushing** (more on what that is later) onto Github, so it is stored in a remote repository. 
 
 ### Create a local repository
@@ -48,9 +50,15 @@ Run
 ```
 git remote add origin https://github.com/USERNAME/PROJECTNAME.git
 ```
+Now you've pushed in onto github!
 
-## A
+## Create a file
 
-## Branching
 
-## Stashing
+## Commit 
+
+## Branch
+
+## Stash
+
+## Merge
