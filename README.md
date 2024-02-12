@@ -60,7 +60,7 @@ touch FILENAME.text
 ```
 
 ### Add the file to the staging enviornment
-Just because you've created a file does not mean Git is tracking changes to the file! You must add the file to the **staging enviornment** or **index**. This is where Git tracks what will go into your next **commit** (see: Committing changes).
+Just because you've created a file does not mean Git is tracking changes to the file! You must add the file to the **staging enviornment** or **index**. This is where Git tracks what will go into your next **commit** (next up).
 Run:
 
 ```
@@ -69,14 +69,17 @@ git add <FILENAME>
 Now the file is in our staging enviornment. 
 
 ## Commiting changes
-Now that we've created a file and Git is tracking the changes we make to it, we can start to **commit**. Making a **commit** is like saving changes on a word document. You are saving the current state of the code. Every **commit** has a **commit message**, which you can use to add a breif description. Here is how to commit:
+Now that we've created a file and Git is tracking the changes we make to it, we can start to **commit**. Making a **commit** is like saving changes on a word document. You are saving the current state of the code. Every **commit** has a **commit message**, which you can use to add a brief description of the changes you've made. Here is how to commit:
 
 ```
 git commit -m "COMMIT MESSAGE"
 ```
 
 ## Branching
+Say you way to focus in on changing a specific component of your code, like a feature. You might want to create a **branch** to work on it, and then combine it with the rest of your project once you've finished it. 
+
 A **branch**
+
 ```
 git checkout -b <my branch>
 ```
