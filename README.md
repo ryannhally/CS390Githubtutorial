@@ -76,15 +76,30 @@ git commit -m "COMMIT MESSAGE"
 ```
 
 ## Branching
-Say you way to focus in on changing a specific component of your code, like a feature. You might want to create a **branch** to work on it, and then combine it with the rest of your project once you've finished it. 
 
-A **branch**
+### Create a branch
+Say you way to focus in on changing a specific component of your code, like a feature. You might want to create a **branch** so you can work on it without affecting the rest of your code, and then combine it with the rest of your project once its finished. In summary, a **branch** is just a seperate version of the repository you can later combine with the main one. Create a branch with
+
+```
+git branch BRANCH NAME
+```
+You've created a branch!
+
+### Switch to a branch
+Just because you've created a branch doesn't mean you are working on that branch, ie, your changes are being commited to it and not the main branch. You will have to checkout the branch by running:
+
+```
+```
+
+To both create a branch and check it out at the same time, use:
 
 ```
 git checkout -b <my branch>
 ```
 
 ## Stashing
+What if you want to save some changes you've made, but aren't quite ready to commit them? The answer to this is **stashing**.
+
 
 
 ## Merge
