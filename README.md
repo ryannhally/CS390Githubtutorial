@@ -5,7 +5,8 @@ Git is a **version control system** for developers. In other words, Git allows y
 
 In this tutorial will cover the basics of using Git from the command line. You will learn how to...
 * Create a repository
-* Commit
+* Add files to the repository
+* Commit changes
 * Branch
 * Merge
 
@@ -31,8 +32,8 @@ gh auth login
 ```
 Follow the prompts.
 
-## Create a repostiory
-First, we will create a local repository on the command line. 
+## Creating a repostiory
+First, we will create a local repository. 
 
 ### Some background...
 
@@ -50,15 +51,39 @@ Run
 ```
 git remote add origin https://github.com/USERNAME/PROJECTNAME.git
 ```
-Now you've pushed in onto github!
+Now you've pushed it onto github!
 
-## Create a file
+## Adding files to your repository
+### Create a file
+Make sure you have moved into the folder you want the file stored in. Then run
+
+```
+touch FILENAME.text
+```
+
+### Add the file to the staging enviornment
+The **staging enviornment** is 
+
+```
+git add <FILENAME>
+```
 
 
-## Commit 
+## Commiting changes
+A **commit** is **commit message**
 
-## Branch
+###
+```
+git commit -m "COMMIT MESSAGE"
+```
 
-## Stash
+## Branching
+A **branch**
+```
+git checkout -b <my branch>
+```
+
+## Stashing
+
 
 ## Merge
