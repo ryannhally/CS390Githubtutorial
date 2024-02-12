@@ -60,7 +60,7 @@ touch FILENAME.text
 ```
 
 ### Add the file to the staging enviornment
-Just because you've created a file does not mean Git is tracking changes to the file! You must add the file to the **staging enviornment** or **index**. This is where Git tracks what will go into your next **commit** (see later).
+Just because you've created a file does not mean Git is tracking changes to the file! You must add the file to the **staging enviornment** or **index**. This is where Git tracks what will go into your next **commit** (see: Committing changes).
 Run:
 
 ```
