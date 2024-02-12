@@ -35,44 +35,42 @@ Follow the prompts.
 ## Creating a repostiory
 First, we will create a local repository. 
 
-### Some background...
-
-There are both **local** and **remote** repositories. **Local** repositories live on your computer while **remote** repositories are kept on a server. If you'd like to collaborate with others on your code, or just want to be able to access your code if, for example, your computer breaks, it's important to be able to use remote repositories. In this tutorial, we will start by creating a local repository and then **pushing** (more on what that is later) onto Github, so it is stored in a remote repository. 
+Git can be used to manage both **local** and **remote** repositories. **Local** repositories live on your computer while **remote** repositories are kept on a server. If you'd like to collaborate with others on your code, or just want to be able to access your code if, for example, your computer breaks, it's important to be able to use remote repositories. In this tutorial, we will start by creating a local repository and then we will **push** (more on what that is later) it onto Github, so it is stored remotely as well. 
 
 ### Create a local repository
-Move into whereever you'd like your project to be stored and run
+Move to the folder you'd like your project to be stored in and run
 ```
 git innit
 ```
-You've now created a local respository!
+You've created a local respository!
 
 ### Push your repository onto Github
-Run
+Now we will push our local repository onto Github. Run:
 ```
 git remote add origin https://github.com/USERNAME/PROJECTNAME.git
 ```
-Now you've pushed it onto github!
+
 
 ## Adding files to your repository
 ### Create a file
-Make sure you have moved into the folder you want the file stored in. Then run
+Before you create a file, make sure you have moved into the folder you want the file stored in. Then create the file with the touch command
 
 ```
 touch FILENAME.text
 ```
 
 ### Add the file to the staging enviornment
-The **staging enviornment** is 
+Just because you've created a file does not mean Git is tracking changes to the file! You must add the file to the **staging enviornment** or **index**. This is where Git tracks what will go into your next **commit** (see later).
+Run:
 
 ```
 git add <FILENAME>
 ```
-
+Now the file is in our staging enviornment. 
 
 ## Commiting changes
-A **commit** is **commit message**
+Now that we've created a file and Git is tracking the changes we make to it, we can start to **commit**. Making a **commit** is like saving changes on a word document. You are saving the current state of the code. Every **commit** has a **commit message**, which you can use to add a breif description. Here is how to commit:
 
-###
 ```
 git commit -m "COMMIT MESSAGE"
 ```
