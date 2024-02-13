@@ -120,18 +120,20 @@ git switch BRANCHNAME
 
 The active branch is called the **head** branch. 
 
-## Merge
+## Merging
 When you've finished working on a branch, you can integrate it back with the main branch through **merging**. Be aware that when you merge, the entire commit history of the branch is added onto the main branch in just one commit. Here is a visual
 <img src="https://wac-cdn.atlassian.com/dam/jcr:c6db91c1-1343-4d45-8c93-bdba910b9506/02%20Branch-1%20kopiera.png?cdnVersion=1441"
      alt="Git Merge Diagram"
      style="float: left; margin-right: 10px;" />
 
+### Check head
 To merge a branch, first check that the head is pointed at the branch you'd like to merge with
 
 ```
 git status
 ```
 
+### Merge branches
 If head is pointed at the correct branch, run
 
 ```
@@ -141,11 +143,13 @@ git merge BRANCHNAME
 ## Stashing
 What if you wanted to save some changes you've made, but aren't quite ready to commit them? The answer to this is **stashing**. When you use the **stash** command, Git saves your changes but away from your working copy. All you need to do is run
 
+### Stash changes
 ```
 git stash
 ```
 
-If you'd like to reapply the changes to your working copy, simply run
+### Pop changes
+If you'd like to reapply the changes to your working copy, you can use **pop** to do so. Simply run
 
 ```
 git stash pop
