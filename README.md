@@ -24,13 +24,20 @@ In this tutorial will cover the basics of using Git from the command line. You w
    ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If you don't already have Git installed, click [here](https://docs.gitlab.com/ee/topics/git/how_to_install_git/index.html) for a tutorial on how to install.
  
-3. Authenticate with Github CLI
+3. Pick a username
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To set your username, run
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To easily manage your credentials, download Github CLI [here](https://github.com/cli/cli#installation). Next, run
 ```
-gh auth login
+git config --global user.name "USER NAME"
 ```
-Follow the prompts.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Note - the use of "global" you are setting this as your username for all of your repositories.
+
+4. Set your email address
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For this tutorial we will need to select an email address to be associated with the changes we make to Github. Simply run 
+```
+git config --global user.email "EMAIL ADDRESS"
+```
 
 ## Creating a repostiory
 First, we will create a **local** repository. 
