@@ -3,7 +3,7 @@ Welcome to my Git from the command line tutorial!
 
 Git is a **version control system** for developers. In other words, Git allows you to manage changes to code. Once you master Git, you will be able to use it to track changes to your code and collaborate more easily with other developers, among other things.
 
-In this tutorial will cover the basics of using Git from the command line. You will learn how to...
+In this tutorial we will cover the basics of using Git from the command line. You will learn how to...
 * Create a repository
 * Add files to the repository
 * Commit changes
@@ -63,7 +63,7 @@ Next, to create a remote repository run
 git remote add origin https://github.com/USERNAME/PROJECTNAME.git
 ```
 
-### Push the changes on the remote repository
+### Push the changes to the remote repository
 Now we will push our local changes to the remote repository by running
 
 ```
@@ -97,7 +97,7 @@ git commit -m "COMMIT MESSAGE"
 ## Branching
 
 ### Create a branch
-Say you want to focus in on changing a specific component of your code, like a feature. You might want to create a **branch** so you can work on it without affecting the rest of your code, and then combine it with the rest of your project once its finished. In summary, a branch is just a seperate version of the repository you can later combine with the main one (called the **main** branch). Here is a visual
+Say you want to focus in on changing a specific component of your code, like a feature. You might want to create a **branch** so you can work on it without affecting the rest of your code, and then combine it with the rest of your project once its finished. In summary, a branch is just a seperate version of the repository you can later combine with the main one (called the **main** branch). Here is a visual:
 
 <img src="https://wac-cdn.atlassian.com/dam/jcr:a905ddfd-973a-452a-a4ae-f1dd65430027/01%20Git%20branch.svg?cdnVersion=1441"
      alt="Git Branch Diagram"
@@ -121,29 +121,30 @@ git switch BRANCHNAME
 The active branch is called the **head** branch. 
 
 ## Merging
-When you've finished working on a branch, you can integrate it back with the main branch through **merging**. Be aware that when you merge, the entire commit history of the branch is added onto the main branch in just one commit. Here is a visual
+When you've finished working on a branch, you can integrate it back with the main branch through **merging**. Be aware that when you merge, the entire commit history of the branch is added onto the main branch in just one commit. Here is a visual:
 <img src="https://wac-cdn.atlassian.com/dam/jcr:c6db91c1-1343-4d45-8c93-bdba910b9506/02%20Branch-1%20kopiera.png?cdnVersion=1441"
      alt="Git Merge Diagram"
      style="float: left; margin-right: 10px;" />
 
 ### Check head
-To merge a branch, first check that the head is pointed at the branch you'd like to merge with
+To merge a branch, first check that the head is pointed at the branch you'd like to merge with by running
 
 ```
 git status
 ```
 
 ### Merge branches
-If head is pointed at the correct branch, run
+If the head is pointed at the correct branch, run
 
 ```
 git merge BRANCHNAME
 ```
 
 ## Stashing
-What if you wanted to save some changes you've made, but aren't quite ready to commit them? The answer to this is **stashing**. When you use the **stash** command, Git saves your changes but away from your working copy. All you need to do is run
 
 ### Stash changes
+What if you wanted to save some changes you've made, but aren't quite ready to commit them? The answer to this is **stashing**. When you use the **stash** command, Git saves your changes but away from your working copy. All you need to do is run
+
 ```
 git stash
 ```
