@@ -57,7 +57,7 @@ Next, to create a remote repository run
 git remote add origin https://github.com/USERNAME/PROJECTNAME.git
 ```
 
-## Push the changes on the remote repository
+### Push the changes on the remote repository
 Now we will push our local changes to the remote repository by running
 
 ```
