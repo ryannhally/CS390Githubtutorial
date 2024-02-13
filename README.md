@@ -96,12 +96,17 @@ git switch BRANCHNAME
 
 
 ## Stashing
-What if you wanted to save some changes you've made, but aren't quite ready to commit them? The answer to this is **stashing**. To **stash** some changes, all you need to do is run
+What if you wanted to save some changes you've made, but aren't quite ready to commit them? The answer to this is **stashing**. When you use the **stash** command, Git saves your changes but away from your working copy. To **stash**, all you need to do is run
 
 ```
 git stash
 ```
 
+If you'd like to reapply the changes to your working copy, simply run
 
+```
+git stash pop
+```
+Note - this does not commmit the changes, it simply reapplies them to the working copy of the code.
 
 ## Merge
