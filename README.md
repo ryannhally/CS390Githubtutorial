@@ -80,7 +80,14 @@ git commit -m "COMMIT MESSAGE"
 ## Branching
 
 ### Create a branch
-Say you want to focus in on changing a specific component of your code, like a feature. You might want to create a **branch** so you can work on it without affecting the rest of your code, and then combine it with the rest of your project once its finished. In summary, a branch is just a seperate version of the repository you can later combine with the main one (called the **main** branch). To create a new branch run
+Say you want to focus in on changing a specific component of your code, like a feature. You might want to create a **branch** so you can work on it without affecting the rest of your code, and then combine it with the rest of your project once its finished. In summary, a branch is just a seperate version of the repository you can later combine with the main one (called the **main** branch). Here is a visual
+
+<img src="https://wac-cdn.atlassian.com/dam/jcr:a905ddfd-973a-452a-a4ae-f1dd65430027/01%20Git%20branch.svg?cdnVersion=1441"
+     alt="Git Branch Diagram"
+     style="float: left; margin-right: 10px;" />
+
+     
+To create a new branch run
 
 ```
 git branch BRANCHNAME
@@ -95,7 +102,10 @@ git switch BRANCHNAME
 ```
 
 ## Merge
-When you've finished working on a branch, you can integrate it back with your main branch. 
+When you've finished working on a branch, you can integrate it back with the main branch through **merging**. Be aware that when you merge, the entire commit history of the branch is added onto the main branch in just one commit. Here is a visual
+<img src="https://wac-cdn.atlassian.com/dam/jcr:c6db91c1-1343-4d45-8c93-bdba910b9506/02%20Branch-1%20kopiera.png?cdnVersion=1441"
+     alt="Git Merge Diagram"
+     style="float: left; margin-right: 10px;" />
 
 
 ## Stashing
