@@ -35,7 +35,7 @@ Follow the prompts.
 ## Creating a repostiory
 First, we will create a **local** repository. 
 
-Git can be used to manage both **local** and **remote** repositories. **Local** repositories live on your computer while **remote** repositories are kept on a server. If you'd like to collaborate with others on your code or access it if your computer breaks, it's important to be able to use remote repositories. In this tutorial, we will start by creating a local repository and then we will **push** (more on what that is later) it onto Github, so it is stored remotely as well. 
+Git can be used to manage both **local** and **remote** repositories. **Local** repositories live on your computer while **remote** repositories are kept on a server. If you'd like to collaborate with others on your code or access it if your computer breaks, it's important to be able to use remote repositories. In this tutorial, we will start by creating a local repository and then we will **push** (more on what that is later) it onto Github so it is stored remotely as well. 
 
 ### Create a local repository
 Move to the folder you'd like your project to be stored in and run
@@ -49,6 +49,8 @@ Now we will push our local repository onto Github. Run:
 ```
 git remote add origin https://github.com/USERNAME/PROJECTNAME.git
 ```
+
+ADD PUSH???
 
 
 ## Adding files to your repository
@@ -81,24 +83,24 @@ git commit -m "COMMIT MESSAGE"
 Say you way to focus in on changing a specific component of your code, like a feature. You might want to create a **branch** so you can work on it without affecting the rest of your code, and then combine it with the rest of your project once its finished. In summary, a **branch** is just a seperate version of the repository you can later combine with the main one. Create a branch with
 
 ```
-git branch BRANCH NAME
+git branch BRANCHNAME
 ```
 You've created a branch!
 
 ### Switch to a branch
-Just because you've created a branch doesn't mean you are working on that branch, ie, your changes are being commited to it and not the main branch. You will have to checkout the branch by running:
+Just because you've created a branch doesn't mean you are working on that branch, ie, your changes are being commited to it and not the main branch. You will have to switch to the branch by running
 
 ```
+git switch BRANCHNAME
 ```
 
-To both create a branch and check it out at the same time, use:
-
-```
-git checkout -b <my branch>
-```
 
 ## Stashing
-What if you want to save some changes you've made, but aren't quite ready to commit them? The answer to this is **stashing**.
+What if you wanted to save some changes you've made, but aren't quite ready to commit them? The answer to this is **stashing**. To **stash** some changes, all you need to do is run
+
+```
+git stash
+```
 
 
 
