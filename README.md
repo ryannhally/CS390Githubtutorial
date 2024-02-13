@@ -71,7 +71,7 @@ git add <FILENAME>
 Now the file is in our staging enviornment. 
 
 ## Commiting changes
-Now that we've created a file and Git is tracking the changes we make to it, we can start to **commit**. Making a **commit** is like saving changes on a word document. You are saving the current state of the code. Every **commit** has a **commit message**, which you can use to add a brief description of the changes you've made. Here is how to commit:
+Now that we've created a file and Git is tracking the changes we make to it, we can start to **commit**. Making a commit is like saving changes on a word document. You are saving the current state of the code. Every commit has a **commit message**, which you can use to add a brief description of the changes you've made. Here is how to commit:
 
 ```
 git commit -m "COMMIT MESSAGE"
@@ -80,7 +80,7 @@ git commit -m "COMMIT MESSAGE"
 ## Branching
 
 ### Create a branch
-Say you way to focus in on changing a specific component of your code, like a feature. You might want to create a **branch** so you can work on it without affecting the rest of your code, and then combine it with the rest of your project once its finished. In summary, a **branch** is just a seperate version of the repository you can later combine with the main one. Create a branch with
+Say you want to focus in on changing a specific component of your code, like a feature. You might want to create a **branch** so you can work on it without affecting the rest of your code, and then combine it with the rest of your project once its finished. In summary, a branch is just a seperate version of the repository you can later combine with the main one (called the **main** branch). To create a new branch run
 
 ```
 git branch BRANCHNAME
@@ -94,9 +94,12 @@ Just because you've created a branch doesn't mean you are working on that branch
 git switch BRANCHNAME
 ```
 
+## Merge
+When you've finished working on a branch, you can integrate it back with your main branch. 
+
 
 ## Stashing
-What if you wanted to save some changes you've made, but aren't quite ready to commit them? The answer to this is **stashing**. When you use the **stash** command, Git saves your changes but away from your working copy. To **stash**, all you need to do is run
+What if you wanted to save some changes you've made, but aren't quite ready to commit them? The answer to this is **stashing**. When you use the **stash** command, Git saves your changes but away from your working copy. All you need to do is run
 
 ```
 git stash
@@ -109,4 +112,5 @@ git stash pop
 ```
 Note - this does not commmit the changes, it simply reapplies them to the working copy of the code.
 
-## Merge
+
+
