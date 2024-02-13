@@ -9,6 +9,7 @@ In this tutorial will cover the basics of using Git from the command line. You w
 * Commit changes
 * Branch
 * Merge
+* Stash
 
 ## Getting Started
 
@@ -25,16 +26,21 @@ In this tutorial will cover the basics of using Git from the command line. You w
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If you don't already have Git installed, click [here](https://docs.gitlab.com/ee/topics/git/how_to_install_git/index.html) for a tutorial on how to install.
  
 3. Pick a username
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To set your username, run
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To set your Git username, run
 
 ```
 git config --global user.name "USER NAME"
 ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Note - the use of "global" you are setting this as your username for all of your repositories.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Note - the use of "global" means you are setting this as your username for all of your repositories.
 
 4. Set your email address
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For this tutorial we will need to select an email address to be associated with the changes we make to Github. Simply run 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For this tutorial we will need to select an email address to be associated with the changes we make to Github. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This should be the same email address that is associated with your Github account. Run
+
 ```
 git config --global user.email "EMAIL ADDRESS"
 ```
@@ -47,7 +53,7 @@ Git can be used to manage both **local** and **remote** repositories. **Local** 
 ### Create a local repository
 Move to the folder you'd like your project to be stored in and run
 ```
-git innit
+git init
 ```
 You've created a local respository!
 
@@ -77,7 +83,7 @@ Just because you've created a file does not mean Git is tracking changes to the 
 Run:
 
 ```
-git add <FILENAME>
+git add FILENAME
 ```
 Now the file is in our staging enviornment. 
 
